@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enriched UI Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="outer_container">
+    <div class="login-box">
+        <div class="inner_login">
+            <h1>Registration Form</h1>
+            <form action="#">
+                <div class="names">
+                    <label for="" class="f-name">Frist Name</label>
+                    <input type="text" placeholder="Frist Name">
+                    <label for="" class="l-name">Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="Dates">
+                    <label for="" class="DOB">Date of Birth</label>
+                    <input type="date" placeholder="D.O.B">
+                </div>
+                <div class="email_input">
+                    <label for="" class="DOB">Write your email</label>
+                    <input type="email"  name="EmailId" placeholder="Write your email" id="EmailId">
+                </div>
+                <div class="f-group">
+                    <label class="Slect_label">Slect Country</label>
+                    <select name="slct1" id="slct1" onchange="populate(this.id,slct2)">
+                        <option value="">--choose country--</option>
+                        <option value="india">INDIA</option>
+                        <option value="america">AMERICA</option>
+                    </select>
+                </div>
+                <div class="f-group">
+                    <label class="Slect_label">Slect City</label>
+                    <select name="slct2" id="slct2">
+                        <option value="">--choose City--</option>
+                        <option value="india">New Dellhi</option>
+                        <option value="america">NewYork</option>
+                    </select>
+                </div>
+                <div class="submit">
+                    <button class="submit-button">SUBMIT YOUR FORM</button>
+                </div>
+            </form>
+        </div>
+        <div class="inner-text-box">
+            <div class="button_box">
+                <h1>Hi There!</h1>
+                <h3>Wlecome to the JavaScript Form Validation</h3>
+                <button class="text-button">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
